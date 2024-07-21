@@ -1,0 +1,6 @@
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\bin\x64\Release\HintServiceMeow.dll
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\bin\x64\Release\HintServiceMeow.pdb
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\obj\x64\Release\HintServiceMeow.csproj.AssemblyReference.cache
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\obj\x64\Release\HintServiceMeow.csproj.CoreCompileInputs.cache
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\obj\x64\Release\HintServiceMeow.dll
+C:\Users\20332\source\repos\HintServiceMeow\HintServiceMeow\obj\x64\Release\HintServiceMeow.pdb
