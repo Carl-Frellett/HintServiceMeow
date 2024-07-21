@@ -14,7 +14,6 @@ namespace HintServiceMeow
         {
             try
             {
-                // 获取与当前 HintDisplay 关联的玩家
                 Player player = Player.Get(__instance.gameObject);
 
                 if (player == null)
@@ -22,10 +21,9 @@ namespace HintServiceMeow
                     return false;
                 }
 
-                // 根据玩家的一些条件来控制是否显示提示
                 var playerDisplay = PlayerDisplay.Get(player);
 
-                return playerDisplay.AllowPatchUpdate; // 返回允许或禁止显示提示的信息。
+                return playerDisplay.AllowPatchUpdate;
             }
             catch (Exception e)
             {
@@ -43,7 +41,6 @@ namespace HintServiceMeow
         {
             try
             {
-                // 获取 ReferenceHub 对象（包含有关该玩家的信息）
                 ReferenceHub hub = __instance.ReferenceHub;
 
                 if (hub?.characterClassManager?.connectionToClient == null)
@@ -53,11 +50,10 @@ namespace HintServiceMeow
 
                 NetworkConnection connection = hub.characterClassManager.connectionToClient;
 
-                // 构建 HintMessage 和 TextHint，并发送给客户端。
                 TextHint textHint = new TextHint(message, new[] { new StringHintParameter(message) }, null, duration);
                 connection.Send(new HintMessage(textHint));
 
-                return false; // 返回 false 来阻止 ShowHint 方法执行默认行为。
+                return false;
             }
             catch (Exception e)
             {
